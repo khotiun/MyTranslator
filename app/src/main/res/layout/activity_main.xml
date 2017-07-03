@@ -1,28 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorBlue"
     tools:context="com.example.mypc.mytranslator.MainActivity">
 
     <EditText
         android:id="@+id/text"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGrey"/>
 
-    <TextView
+    <EditText
         android:id="@+id/translated"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text" />
+        android:textColor="@color/colorGrey"/>
 
-    <Button
-        android:id="@+id/translate_btn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/translated"
-        android:text="TRANSLATE"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/btn_en_ru"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="en-ru"/>
+
+        <Button
+            android:id="@+id/btn_ru_en"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ru-en"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_pl_ru"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="pl-ru"/>
+
+        <Button
+            android:id="@+id/btn_ru_pl"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ru-pl"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_fr_ru"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="fr-ru"/>
+
+        <Button
+            android:id="@+id/btn_ru_fr"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ru-fr"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_de_ru"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="de-ru"/>
+
+        <Button
+            android:id="@+id/btn_ru_de"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ru-de"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_zh_ru"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/translated"
+            android:text="zh-ru"/>
+
+        <Button
+            android:id="@+id/btn_ru_zh"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/translated"
+            android:text="ru-zh"/>
+    </LinearLayout>
+
+
+</LinearLayout>
